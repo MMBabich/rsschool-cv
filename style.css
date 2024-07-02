@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+.footer-container{
+    width: 25%;
+}
