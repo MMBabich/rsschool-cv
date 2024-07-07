@@ -1,11 +1,72 @@
+@font-face {
+  font-family: Dancing Script;
+  src: url("assets/fonts/DancingScript-VariableFont_wght.ttf");
+}
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   }
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    font-family: "Dancing Script";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #4d2323;
   }
-.footer-container{
-    width: 25%;
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-list {
+  list-style: none;
+}
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+}
+.nav-link {
+  transition: 0.3s;
+}
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+.section-title {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: grey;
+}
+.link {
+  text-decoration: none;
+  color: #829985;
+  transition: color 0.5s;
+}
+.link:hover {
+  color: #5d7260;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-img{
+  width: 50px;
 }
